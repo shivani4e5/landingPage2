@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>landingpage</title>
+<link rel="stylesheet" type="text/css" href="mLp1.css">
+</head>
+<body>
+<header>
+<a href="#" class="logo"><img src="./Assets/images/logo.png"/></a>
+<div class="toggle"><img src="./Assets/images/toggle.png"/></div>
+</header>
+<div class="banner">
+<img src="./Assets/images/bg.jpg" class="fitbag"/>
+<div class="content">
+<h2>Put on a<span>Happy</span>face</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+ when an unknown printer took a galley of type and scrambled it to make a type.</p>
+ <a href="#"class="play" onclick="toggle();"><img src="./Assets/images/play.png"/>Watch Trailer</a>
+ </div>
+ <div class="slide">
+ <img src="./Assets/images/joker.png" class="imgBx"/>
+ </div>
+ </div>
+<ul class="sci">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+</ul>
+<div class="trailer">
+<video controls="true">
+<source src="./Assets/images/video3.mp4"/>
+</video>
+<img src="./Assets/images/close.png" class="close" onclick="toggle();"/>
+</div>
+<script type="text/javascript">
+function toggle(){
+    var trailer=document.querySelector(".trailer");
+    trailer.classList.toggle("active");
+    console.log("trailer")
+}
+</script>
+<script src="mLp1.js"></script>
+</body>
+</html>
